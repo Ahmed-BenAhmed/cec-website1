@@ -25,7 +25,8 @@ const SelectYear = () => {
             >
                 <p> {currentYear} </p>
                 <FaAngleDown
-                    className="absolute -translate-y-1/2 right-1 top-1/2" color="black"
+                    style={{color : "#000"}}
+                    className="absolute -translate-y-1/2 right-1 top-1/2"
                 />
                 <div
                     className={cn(
