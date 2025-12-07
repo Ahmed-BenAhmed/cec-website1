@@ -23,6 +23,10 @@ export const links: LinksProps[] = [
         "name": "Events"
     },
     {
+        "link": "/innovation-challenge",
+        "name": "Build With Tech"
+    },
+    {
         "link": "/projects",
         "name": "Projects"
     },

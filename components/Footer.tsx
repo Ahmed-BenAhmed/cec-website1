@@ -62,7 +62,7 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="border-t border-[#333333] mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-[#444444] text-sm">
-                        © 2025 Ignite Tech Hub. All rights reserved.
+                        © 2025 CEC CLUB. All rights reserved.
                     </p>
                     <div className="flex mt-4 space-x-6 md:mt-0">
                         <a
