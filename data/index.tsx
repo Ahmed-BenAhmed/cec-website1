@@ -16,6 +16,7 @@ import sara from "../public/images/team/sara.png";
 import soufian from "../public/images/team/soufian.png";
 import wissal from "../public/images/team/wissal.png";
 import zouhir from "../public/images/team/zouhir.png";
+import salma_el_gaour from "../public/images/team/salma_el_gaour.jpg"
 
 // New members for the second team
 import kawtar from "../public/images/team/kawtar.jpg";
@@ -28,16 +29,20 @@ import riad from "../public/images/team/riad.jpg";
 import abderrahmane from "../public/images/team/abderrahmane.jpg";
 import youssef from "../public/images/team/Yusouf.jpg";
 import ilham from "../public/images/team/ilhame.jpg";
+import imrane from "../public/images/team/imrane.jpg"
 
-import hero from "../public/images/hero.jpg";
+import hero2025 from "../public/images/hero2025.jpg";
+import founded2025 from "../public/images/hero2025.jpg";
 
-import founded from "../public/images/founded.jpg";
+import hero2026 from "../public/images/hero2026.jpg";
+import founded2026 from "../public/images/hero2026.jpg";
 
 import ai_data from "../public/images/events/ai-data.png";
 import geeks from "../public/images/events/geeks.png";
 import id_to_pd from "../public/images/events/id-to-pd.png";
 import pod from "../public/images/events/pod.jpg";
 import pr_solv from "../public/images/events/pr-solv.png";
+import orientation from "../public/images/events/orientation.png"
 import { StaticImageData } from "next/image";
 
 import fake_profile from "../public/images/fake-profile1.png"
@@ -313,17 +318,17 @@ export const teamMembers: MembersProps[] = [
                 "name": "Imran Hajji",
                 "title": "Responsable Design",
                 "desc": "Leading the visual identity and design projects.",
-                "profile": fake_profile,
+                "profile": imrane,
                 "linkedIn": "/"
             },
             {
                 "id": 13,
-                "name": "Elbastami ilham",
+                "name": "SALMA EL GAOUR",
                 "title": "Photographer et Réseaux Sociaux",
                 "desc": "Managing the club's social media presence and photography.",
-                "profile": ilham,
-                "linkedIn": "https://www.linkedin.com/in/elbastami-ilham?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-            }
+                "profile": salma_el_gaour,
+                "linkedIn": "https://www.linkedin.com/in/salma-el-gaour/"
+            },
         ]
     }
 ];
@@ -416,7 +421,24 @@ export const eventsCEC: EventsCECProps[] = [
                 "modalTitle": "Product Development Masterclass",
                 "modalDescription": "This comprehensive workshop guides you through the entire product development lifecycle. From initial ideation and market research to prototyping, testing, and final launch, our experienced speakers will share practical frameworks and real-world case studies. Perfect for aspiring entrepreneurs, product managers, and developers looking to transform their ideas into successful market-ready products."
             },
-        ]
+        ],
+    },
+    {
+        "id": 2026,
+        "events": [
+            
+            {
+                "id": 1,
+                "picture": orientation,
+                "title": "Orientation PFA/PFE From Topic To Succes",
+                "date": "November 23, 2025",
+                "status": "Online",
+                "speakers": ["Aicha Njimate"],
+                "desc": "An introductory session to the fascinating worlds of Data and Artificial Intelligence.",
+                "modalTitle": "Orientation PFA/PFE From Topic To Succes",
+                "modalDescription": "This exclusive career breakthrough session guides you through the complete job search optimization process. From decoding application rejections and LinkedIn profile enhancement to interview psychology and opportunity negotiation, our tech industry insider will share actionable frameworks and real recruitment insights. Perfect for students, career starters, and professionals seeking to transform their visibility and secure their dream internship or tech role with strategic precision."
+            },
+        ],
     },
 ];
 
@@ -533,9 +555,14 @@ interface AssetsProps {
 export const assets: AssetsProps[] = [
     {
         id: 2025,
-        hero,
-        founded,
-    }
+        hero : hero2025,
+        founded : founded2025,
+    },
+    {
+        id: 2026,
+        hero : hero2026,
+        founded : founded2026,
+    },
 ]
 
 export interface StatistcisProps {

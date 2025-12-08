@@ -18,7 +18,7 @@ const stats2025: StatItem[] = [
 const stats2026: StatItem[] = [
     { value: 13, label: "MEMBERS", suffix: "+" },
     { value: 0, label: "PROJECTS", suffix: "+" },
-    { value: 0, label: "EVENTS", suffix: "+" },
+    { value: 1, label: "EVENTS", suffix: "+" },
 ]
 
 export function AnimatedStats() {
@@ -48,7 +48,7 @@ export function AnimatedStats() {
     }, [])
 
     useEffect(() => {
-        if (!isVisible) return
+        if (!isVisible) return;
 
         const animateCounters = () => {
             const duration = 2000 // 2 seconds

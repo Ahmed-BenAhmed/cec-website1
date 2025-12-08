@@ -17,6 +17,7 @@ import Image from "next/image"
 import Header from "../Header"
 import Footer from "../Footer"
 import { useMobileMenu } from "@/providers/MobileMenuProvider"
+import { useSelectYear } from "@/providers/SelectYearProvider"
 
 type FormData = {
     teamName: string
@@ -109,22 +110,24 @@ const clubLogos = [
 ]
 
 
-const Logos = () => (    <>
-    <div
-        key={clubLogos[0].alt}
-        className="flex h-12 w-[100px] items-center justify-center rounded-full p-2.5 ring-1 ring-white/10"
-    >
-        <Image src={clubLogos[0].src} alt={clubLogos[0].alt} width={40} height={40} className="object-contain" />
-    </div>
-    {clubLogos.slice(1).map(({ src, alt }) => (
-    <div
-        key={alt}
-        className="flex bg-white h-12 w-[100px] items-center justify-center rounded-full p-2.5 ring-1 ring-white/10"
-    >
-        <Image src={src} alt={alt} width={70} height={50} className="object-contain" />
-    </div>
-    ))}
-</>)
+const Logos = () => {
+    return <>
+        <div
+            key={clubLogos[0].alt}
+            className="flex h-12 w-[100px] items-center justify-center rounded-full p-2.5 ring-1 ring-white/10"
+        >
+            <Image src={clubLogos[0].src} alt={clubLogos[0].alt} width={40} height={40} className="object-contain" />
+        </div>
+        {clubLogos.slice(1).map(({ src, alt }) => (
+            <div
+                key={alt}
+                className="flex bg-white h-12 w-[100px] items-center justify-center rounded-full p-2.5 ring-1 ring-white/10"
+            >
+                <Image src={src} alt={alt} width={70} height={50} className="object-contain" />
+            </div>
+        ))}
+    </>
+}
 
 const initialFormData: FormData = {
     teamName: "",
@@ -180,9 +183,9 @@ export default function InnovationChallenge() {
 
             <main>
                 {/* Hero */}
-                <section className="relative overflow-hidden px-6 pb-16 pt-28">
+                <section className="relative px-6 pb-16 overflow-hidden pt-28">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,214,10,0.12),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(255,214,10,0.08),transparent_30%),linear-gradient(135deg,rgba(255,214,10,0.04),transparent)]" />
-                    <div className="relative mx-auto max-w-7xl grid items-center gap-12 lg:grid-cols-2">
+                    <div className="relative grid items-center gap-12 mx-auto max-w-7xl lg:grid-cols-2">
                         <div className="space-y-6">
                             <div className="inline-flex items-center gap-3 rounded-full border border-[#2a2a2a] bg-black/40 px-4 py-2 uppercase tracking-[0.2em] text-xs text-[#ffd60a]">
                                 CEC CLUB × Enactus <span className="text-white/70">ENSA Berrechid</span>
@@ -243,11 +246,11 @@ export default function InnovationChallenge() {
                                         <p className="text-sm text-gray-400">14h30 – 17h00 · Room TP3</p>
                                     </div>
                                     <div className="flex items-center gap-2 rounded-full bg-[#ffd60a] px-3 py-2 text-xs font-semibold text-black">
-                                        <Calendar className="h-4 w-4" />
+                                        <Calendar className="w-4 h-4" />
                                         Vendredis
                                     </div>
                                 </div>
-                                <div className="mt-4 grid gap-4">
+                                <div className="grid gap-4 mt-4">
                                     {sessions.map(({ title, detail, icon: Icon, highlight }) => (
                                         <div
                                             key={title}
@@ -274,7 +277,7 @@ export default function InnovationChallenge() {
 
                 {/* Overview */}
                 <section id="overview" className="bg-[#0f0f0f] px-6 py-16">
-                    <div className="mx-auto max-w-6xl space-y-10">
+                    <div className="max-w-6xl mx-auto space-y-10">
                         <div className="text-center">
                             <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#2a2a2a] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffd60a]">
                                 Event Overview
@@ -282,7 +285,7 @@ export default function InnovationChallenge() {
                             <h2 className="text-3xl font-bold text-white md:text-4xl">
                                 Why join this <span className="text-[#ffd60a]">challenge?</span>
                             </h2>
-                            <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-400">
+                            <p className="max-w-3xl mx-auto mt-4 text-lg text-gray-400">
                                 Go from idea to prototype in just 3 sessions with mentorship on planning, AI tooling, and product
                                 storytelling. No prior experience required. Open to ENSA students and guests from outside the school
                                 (just register below).
@@ -305,7 +308,7 @@ export default function InnovationChallenge() {
 
                 {/* Learning outcomes */}
                 <section className="px-6 py-16">
-                    <div className="mx-auto max-w-6xl space-y-10">
+                    <div className="max-w-6xl mx-auto space-y-10">
                         <div className="text-center">
                             <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#2a2a2a] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffd60a]">
                                 Learning Outcomes
@@ -332,7 +335,7 @@ export default function InnovationChallenge() {
 
                 {/* How it works */}
                 <section className="bg-[#0f0f0f] px-6 py-16">
-                    <div className="mx-auto max-w-5xl space-y-10">
+                    <div className="max-w-5xl mx-auto space-y-10">
                         <div className="text-center">
                             <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#2a2a2a] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffd60a]">
                                 Process
@@ -347,7 +350,7 @@ export default function InnovationChallenge() {
                                     <div key={step} className="relative flex gap-6 rounded-xl border border-[#2a2a2a] bg-[#121212] p-6">
                                         <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-[#ffd60a] text-base font-bold text-black shadow-lg">
                                             {step}
-                                            <span className="absolute inset-0 rounded-full border border-black/10" />
+                                            <span className="absolute inset-0 border rounded-full border-black/10" />
                                         </div>
                                         <div>
                                             <h3 className="text-lg font-semibold text-white">{title}</h3>
@@ -367,7 +370,7 @@ export default function InnovationChallenge() {
                             <div className="px-8 py-12 text-center md:px-12">
                                 <h2 className="text-3xl font-bold text-white md:text-4xl">Prizes & Recognition</h2>
                                 <p className="mt-3 text-lg text-gray-200">Everyone who participates wins</p>
-                                <div className="mt-10 grid gap-6 md:grid-cols-3">
+                                <div className="grid gap-6 mt-10 md:grid-cols-3">
                                     {[
                                         { emoji: "🏅", title: "Certificate", text: "All participants receive a Certificate of Completion" },
                                         { emoji: "🎖️", title: "Winners", text: "Top teams get mentorship and tech-themed prizes" },
@@ -387,7 +390,7 @@ export default function InnovationChallenge() {
 
                 {/* Registration */}
                 <section id="register" className="bg-[#0f0f0f] px-6 py-16">
-                    <div className="mx-auto max-w-6xl">
+                    <div className="max-w-6xl mx-auto">
                         <div className="text-center">
                             <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#2a2a2a] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffd60a]">
                                 Limited Spots
@@ -403,14 +406,14 @@ export default function InnovationChallenge() {
 
                         <div className="mt-10 grid gap-8 md:grid-cols-[1.1fr,0.9fr]">
                             <div className="rounded-2xl border border-[#2a2a2a] bg-[#121212] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
-                                <div className="mb-4 flex flex-wrap items-center gap-3">
+                                <div className="flex flex-wrap items-center gap-3 mb-4">
                                     <span className="text-xs uppercase tracking-[0.2em] text-[#ffd60a]">Organisé par</span>
                                     <div className="flex items-center gap-2">
                                         <Logos />
                                     </div>
                                 </div>
 
-                                <div className="mb-6 flex flex-wrap gap-3 text-sm text-gray-400">
+                                <div className="flex flex-wrap gap-3 mb-6 text-sm text-gray-400">
                                     <div className="flex items-center gap-2 rounded-full border border-[#2a2a2a] px-3 py-2">
                                         <Calendar className="h-4 w-4 text-[#ffd60a]" />
                                         Dec 12, Dec 19, Dec 26
@@ -427,7 +430,7 @@ export default function InnovationChallenge() {
 
                                 <form onSubmit={handleSubmit} className="space-y-5">
                                     <div>
-                                        <label className="mb-2 block text-sm font-semibold text-white">
+                                        <label className="block mb-2 text-sm font-semibold text-white">
                                             Team Name <span className="text-[#ffd60a]">*</span>
                                         </label>
                                         <input
@@ -440,7 +443,7 @@ export default function InnovationChallenge() {
 
                                     <div className="grid gap-4 md:grid-cols-2">
                                         <div>
-                                            <label className="mb-2 block text-sm font-semibold text-white">
+                                            <label className="block mb-2 text-sm font-semibold text-white">
                                                 Team Member 1 (Full Name) <span className="text-[#ffd60a]">*</span>
                                             </label>
                                             <input
@@ -451,7 +454,7 @@ export default function InnovationChallenge() {
                                             />
                                         </div>
                                         <div>
-                                            <label className="mb-2 block text-sm font-semibold text-white">
+                                            <label className="block mb-2 text-sm font-semibold text-white">
                                                 Team Member 1 (Phone) <span className="text-[#ffd60a]">*</span>
                                             </label>
                                             <input
@@ -465,7 +468,7 @@ export default function InnovationChallenge() {
 
                                     <div className="grid gap-4 md:grid-cols-2">
                                         <div>
-                                            <label className="mb-2 block text-sm font-semibold text-white">
+                                            <label className="block mb-2 text-sm font-semibold text-white">
                                                 Team Member 2 (Full Name)
                                             </label>
                                             <input
@@ -476,7 +479,7 @@ export default function InnovationChallenge() {
                                             />
                                         </div>
                                         <div>
-                                            <label className="mb-2 block text-sm font-semibold text-white">
+                                            <label className="block mb-2 text-sm font-semibold text-white">
                                                 Team Member 2 (Phone)
                                             </label>
                                             <input
@@ -490,7 +493,7 @@ export default function InnovationChallenge() {
 
                                     <div className="grid gap-4 md:grid-cols-2">
                                         <div>
-                                            <label className="mb-2 block text-sm font-semibold text-white">
+                                            <label className="block mb-2 text-sm font-semibold text-white">
                                                 Team Member 3 (Full Name - Optional)
                                             </label>
                                             <input
@@ -501,7 +504,7 @@ export default function InnovationChallenge() {
                                             />
                                         </div>
                                         <div>
-                                            <label className="mb-2 block text-sm font-semibold text-white">
+                                            <label className="block mb-2 text-sm font-semibold text-white">
                                                 Team Member 3 (Phone - Optional)
                                             </label>
                                             <input
@@ -554,7 +557,7 @@ export default function InnovationChallenge() {
 
                 {/* FAQ */}
                 <section className="px-6 py-16">
-                    <div className="mx-auto max-w-4xl space-y-8">
+                    <div className="max-w-4xl mx-auto space-y-8">
                         <div className="text-center">
                             <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#2a2a2a] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffd60a]">
                                 FAQ
@@ -568,7 +571,7 @@ export default function InnovationChallenge() {
                                     <button
                                         type="button"
                                         onClick={() => toggleFaq(index)}
-                                        className="flex w-full items-center justify-between px-5 py-4 text-left transition hover:bg-white/5"
+                                        className="flex items-center justify-between w-full px-5 py-4 text-left transition hover:bg-white/5"
                                     >
                                         <span className="font-semibold text-white">{question}</span>
                                         {openFaq === index ? (
@@ -588,7 +591,7 @@ export default function InnovationChallenge() {
 
                 {/* Location & schedule */}
                 <section className="bg-[#0f0f0f] px-6 py-16">
-                    <div className="mx-auto max-w-6xl space-y-8">
+                    <div className="max-w-6xl mx-auto space-y-8">
                         <div className="text-center">
                             <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-[#2a2a2a] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#ffd60a]">
                                 Logistics
@@ -598,7 +601,7 @@ export default function InnovationChallenge() {
 
                         <div className="grid gap-6 md:grid-cols-2">
                             <div className="rounded-2xl border border-[#2a2a2a] bg-[#121212] p-6">
-                                <div className="mb-4 flex items-center gap-3">
+                                <div className="flex items-center gap-3 mb-4">
                                     <MapPin className="h-6 w-6 text-[#ffd60a]" />
                                     <h3 className="text-xl font-semibold text-white">Venue</h3>
                                 </div>
@@ -613,7 +616,7 @@ export default function InnovationChallenge() {
                             </div>
 
                             <div className="rounded-2xl border border-[#2a2a2a] bg-[#121212] p-6">
-                                <div className="mb-4 flex items-center gap-3">
+                                <div className="flex items-center gap-3 mb-4">
                                     <Calendar className="h-6 w-6 text-[#ffd60a]" />
                                     <h3 className="text-xl font-semibold text-white">Timing</h3>
                                 </div>

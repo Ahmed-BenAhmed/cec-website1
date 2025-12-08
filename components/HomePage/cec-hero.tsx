@@ -7,7 +7,6 @@ import Image, { StaticImageData } from "next/image"
 import { assets } from "@/data"
 import { useSelectYear } from "@/providers/SelectYearProvider"
 import Header from "../Header"
-import Footer from "../Footer"
 
 const ShowHero = ({ year }: { year: number }) => {
 

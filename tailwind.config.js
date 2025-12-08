@@ -14,6 +14,7 @@ module.exports = {
         dark : {
           1 : "rgba(0,0,0,0.7)"
         },
+        angle_down : "#000",
         main : "#ffd60a",
         light : "#ffffff99",
         main_shadow : "0px 2px 10px rgba(255, 214, 10, 0.7)"
