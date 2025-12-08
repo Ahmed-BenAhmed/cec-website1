@@ -23,7 +23,7 @@ const ShowHero = ({ year }: { year: number }) => {
         }
     }, [year]);
 
-    return <div className="w-[100%] h-[100%]">
+    return <div className="w-[100%] h-[100%] hidden md:block">
         <Image
             src={source || "/placeholder.svg"}
             alt="hero"
