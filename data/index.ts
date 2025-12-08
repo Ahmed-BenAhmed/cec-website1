@@ -246,7 +246,7 @@ export const teamMembers: MembersProps[] = [
                 "title": "Chef de Protocole Adjointe",
                 "desc": "Assisting in event planning and protocol management.",
                 "profile": anass,
-                "linkedIn": "https://www.linkedin.com/in/anass-choraichi-80a403267/",
+                "linkedIn": "https://www.linkedin.com/in/a-techpro-c-80a403267/",
                 "gitHub" : "https://github.com/ATechproC"
             },
             {
