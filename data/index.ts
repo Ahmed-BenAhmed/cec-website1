@@ -108,7 +108,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 1,
                 "name": "Ahmed Ben Ahmed",
-                "title": "Président",
+                "title": "President",
                 "desc": "Computer Engineering student leading our club's vision and operations.",
                 "profile": ahmed,
                 "linkedIn": "https://www.linkedin.com/in/ahmed-ben-ahmed/",
@@ -117,7 +117,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 2,
                 "name": "Chaimaa Dhah",
-                "title": "Secrétaire Générale",
+                "title": "Secretary General",
                 "desc": "Managing club communications and administrative tasks.",
                 "profile": chaimaa,
                 "linkedIn": "https://www.linkedin.com/in/chaimaa-dhah-671324224/",
@@ -125,7 +125,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 3,
                 "name": "Aya Farmati",
-                "title": "Trésorière",
+                "title": "Treasurer",
                 "desc": "Handling club finances and budget planning.",
                 "profile": aya,
                 "linkedIn": "https://www.linkedin.com/in/aya-farmati-bb1705226/",
@@ -141,7 +141,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 5,
                 "name": "Wissal Cheikh",
-                "title": "Chef de Protocole",
+                "title": "Head of Protocol",
                 "desc": "Overseeing event organization and official procedures.",
                 "profile": wissal,
                 "linkedIn": "https://www.linkedin.com/in/wissal-cheikh/",
@@ -149,7 +149,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 6,
                 "name": "Asmaa Talal",
-                "title": "Chef de Protocole Adjointe",
+                "title": "Assistant Head of Protocol",
                 "desc": "Assisting in event planning and protocol management.",
                 "profile": asmaa,
                 "linkedIn": "https://www.linkedin.com/in/asmaa-talal",
@@ -157,7 +157,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 7,
                 "name": "Ait Elhaj Ghizlane",
-                "title": "Responsable Événementielle",
+                "title": "Event Lead",
                 "desc": "Planning and executing club events and activities.",
                 "profile": aitlhaj,
                 "linkedIn": "linkedin.com/in/ait-elhaj-ghizlane",
@@ -165,7 +165,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 8,
                 "name": "Eljazouly Fatima Zahra",
-                "title": "Responsable de Formation",
+                "title": "Training Lead",
                 "desc": "Developing and coordinating training programs.",
                 "profile": eljazouly,
                 "linkedIn": "linkedin.com/in/eljazouly-fatima-zahra/",
@@ -173,7 +173,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 9,
                 "name": "Hamza Mousrij",
-                "title": "Responsable de Formation Adjoint",
+                "title": "Deputy Training Lead",
                 "desc": "Assisting with workshop planning and educational initiatives.",
                 "profile": hamz,
                 "linkedIn": "https://www.linkedin.com/in/hamza-mousrij/",
@@ -181,7 +181,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 10,
                 "name": "Soufiane Hamouche",
-                "title": "Responsable Multimédia",
+                "title": "Multimedia Lead",
                 "desc": "Creating and managing club's digital content.",
                 "profile": soufian,
                 "linkedIn": "linkedin.com/in/soufiane-hamouche",
@@ -189,7 +189,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 11,
                 "name": "Zouhair Serrar",
-                "title": "Vice Président",
+                "title": "Vice President",
                 "desc": "Supporting club leadership and overseeing project execution.",
                 "profile": zouhir,
                 "linkedIn": "https://www.linkedin.com/in/zouhair-serrar/",
@@ -213,7 +213,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 14,
                 "name": "Sara Mesnaoui",
-                "title": "Photographer et Réseaux Sociaux",
+                "title": "Photographer & Social Media",
                 "desc": "Managing the club's social media presence and photography.",
                 "profile": sara,
                 "linkedIn": "linkedin.com/in/sara-mesnaoui",
@@ -226,7 +226,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 1,
                 "name": "Ahmed Ben Ahmed",
-                "title": "Président",
+                "title": "President",
                 "desc": "Computer Engineering student leading our club's vision and operations.",
                 "profile": ahmed,
                 "linkedIn": "https://www.linkedin.com/in/ahmed-ben-ahmed/",
@@ -235,7 +235,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 2,
                 "name": "Kawtar El Bahaoui",
-                "title": "Vice Président",
+                "title": "Vice President",
                 "desc": "Supporting club leadership and overseeing project execution.",
                 "profile": kawtarB,
                 "linkedIn": "https://www.linkedin.com/in/kawtar-elbahaoui-542002356"
@@ -243,7 +243,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 3,
                 "name": "Anass Choraichi",
-                "title": "Chef de Protocole Adjointe",
+                "title": "Assistant Head of Protocol",
                 "desc": "Assisting in event planning and protocol management.",
                 "profile": anass,
                 "linkedIn": "https://www.linkedin.com/in/a-techpro-c-80a403267/",
@@ -252,7 +252,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 4,
                 "name": "ER.RAHMOUNI Meriem",
-                "title": "Responsable Événementielle",
+                "title": "Event Lead",
                 "desc": "Planning and executing club events and activities.",
                 "profile": meriem,
                 "linkedIn": "http://linkedin.com/in/meriem-errahmouni-44a47b355"
@@ -260,7 +260,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 5,
                 "name": "Kawtar Boutaskiouin",
-                "title": "Secrétaire Générale",
+                "title": "Secretary General",
                 "desc": "Managing club communications and administrative tasks.",
                 "profile": kawtar,
                 "linkedIn": "https://www.linkedin.com/in/kawtar-boutaskiouin-1a9557356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -268,7 +268,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 6,
                 "name": "Achraf Abdelfadel",
-                "title": "Trésorière",
+                "title": "Treasurer",
                 "desc": "Handling club finances and budget planning.",
                 "profile": achraf,
                 "linkedIn": "https://www.linkedin.com/in/achraf-abdelfadel-6b67282a6/"
@@ -284,7 +284,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 8,
                 "name": "Assmaa azaroual",
-                "title": "Chef de Protocole",
+                "title": "Head of Protocol",
                 "desc": "Overseeing event organization and official procedures.",
                 "profile": assmaa,
                 "linkedIn": "https://www.linkedin.com/in/assmaa-azaroual"
@@ -292,7 +292,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 9,
                 "name": "Sabti Riad",
-                "title": "Responsable de Formation",
+                "title": "Training Lead",
                 "desc": "Developing and coordinating training programs.",
                 "profile": riad,
                 "linkedIn": "https://www.linkedin.com/in/riad-sabti-459186306/"
@@ -300,7 +300,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 10,
                 "name": "Abderrahmane Khbabez",
-                "title": "Responsable de Formation Adjoint",
+                "title": "Deputy Training Lead",
                 "desc": "Assisting with workshop planning and educational initiatives.",
                 "profile": abderrahmane,
                 "linkedIn": "https://www.linkedin.com/in/4bderrahmane/"
@@ -308,7 +308,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 11,
                 "name": "Youssef Elkandart",
-                "title": "Responsable Multimédia",
+                "title": "Multimedia Lead",
                 "desc": "Creating and managing club's digital content.",
                 "profile": youssef,
                 "linkedIn": "https://www.linkedin.com/in/youssef-elkandart-459533324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -316,7 +316,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 12,
                 "name": "Imran Hajji",
-                "title": "Responsable Design",
+                "title": "Design Lead",
                 "desc": "Leading the visual identity and design projects.",
                 "profile": imrane,
                 "linkedIn": "/"
@@ -324,7 +324,7 @@ export const teamMembers: MembersProps[] = [
             {
                 "id": 13,
                 "name": "SALMA EL GAOUR",
-                "title": "Photographer et Réseaux Sociaux",
+                "title": "Photographer & Social Media",
                 "desc": "Managing the club's social media presence and photography.",
                 "profile": salma_el_gaour,
                 "linkedIn": "https://www.linkedin.com/in/salma-el-gaour/"

@@ -20,7 +20,7 @@ const ShowTeamMembers = ({ year }: { year: number }) => {
         }
     }, [year])
 
-    const president = members.find((member) => member.title.toLowerCase().includes("président"))
+    const president = members.find((member) => member.title.toLowerCase().includes("president"))
     
     return (
         <section className="py-20 bg-[#0a0a0a] w-[96%] mx-auto">
