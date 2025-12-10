@@ -95,7 +95,7 @@ const processSteps = [
 
 const clubLogos = [
     { src: "/logos/cec.png", alt: "CEC CLUB logo" },
-    { src: "/logos/enactus.png", alt: "Enactus ENSA Berrechid logo" },
+    { src: "/logos/enactus_berrechid.png", alt: "Enactus ENSA Berrechid logo" },
     { src: "/logos/ensa.png", alt: "ENSA Berrechid logo" },
 ]
 
